@@ -6,7 +6,17 @@ class Library:
         self.book_list: list[Book] = []
 
     def add_book(self, book: Book) -> None:
+        try:
+            self.check_if_isbn_in_book_list(book.isbn)
+        except ValueError as e:
+            print("The book with that isbn was already added")
+            return None
         self.book_list.append(book)
+
+    def check_if_isbn_in_book_list(self, isbn: str) -> None | ValueError:
+        if isbn in [book.isbn for book in self.book_list]:
+            raise ValueError
+        return None
 
     def rent_book(self, isbn: str) -> str:
         for book in self.book_list:

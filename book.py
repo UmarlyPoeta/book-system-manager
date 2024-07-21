@@ -6,12 +6,13 @@ class Book:
         self.isbn: str = isbn
         self.rent: bool = rent
 
-        try:
-            with open(text_file_name, "r") as book_representation:
-                self.text_representation: list[str] = book_representation.readlines()
-        except OSError as e:
-            print(f"Error opening file {text_file_name}: {e}")
-            self.text_representation = []
+        if text_file_name != "":  
+            try:
+                with open(text_file_name, "r") as book_representation:
+                    self.text_representation: list[str] = book_representation.readlines()
+            except OSError as e:
+                print(f"Error opening file {text_file_name}: {e}")
+                self.text_representation = []
 
     def to_dict(self) -> dict:
         return {
