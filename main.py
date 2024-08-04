@@ -52,7 +52,7 @@ def main():
             case "8":
                 print("Instructions on how to use the library manager.")
             case "9":
-                print("Book System Manager v1.0. Created by Your Name.")
+                print("Book System Manager v1.0. Created by Patryk.")
             case _:
                 print("Invalid choice. Please try again.")
         input("press Enter")

@@ -1,6 +1,10 @@
 import tkinter as tk
 from tkinter import ttk
 from library import Library
+# The `Book` class is likely a class that represents a book object in your library
+# management system. It may contain attributes such as title, author, genre,
+# publication year, availability status, etc., and methods to manipulate and retrieve
+# information about a book object.
 from book import Book
 from sys import exit
 
