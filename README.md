@@ -76,7 +76,7 @@ book-system-manager/
 ├── book.py                      # Book class definition
 ├── library.py                   # Library class for managing book collections
 ├── main.py                      # CLI application entry point
-├── gui.py                       # GUI application (in development)
+├── gui.py                       # GUI application
 ├── library_data.json            # Sample library data file
 ├── example_book_txt_files/      # Sample book text files
 │   ├── harry-potter.txt
@@ -136,7 +136,7 @@ Library data is stored in JSON format with the following structure:
 ## Sample Data
 
 The repository includes sample data with two books:
-- **Harry Potter and the Sorcerer's Stone** by J.K. Rowling (1997)
+- **Harry Potter** by J.K. Rowling (1997)
 - **The Hobbit** by J.R.R. Tolkien (1937)
 
 ## Contributing
